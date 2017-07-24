@@ -1,0 +1,40 @@
+{
+  "name": "specials-home",
+  "version": "1.0.0",
+  "description": "Taveou Home Page",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelescamilla/specials-home.git"
+  },
+  "keywords": [
+    "webpack",
+    "postcss"
+  ],
+  "author": "Manuel Escamilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manuelescamilla/specials-home/issues"
+  },
+  "homepage": "https://github.com/manuelescamilla/specials-home#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "image-webpack-loader": "^3.3.1",
+    "lost": "^8.2.0",
+    "postcss": "^6.0.8",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.2.0-rc.0"
+  }
+}
