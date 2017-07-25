@@ -5,19 +5,33 @@
 
 #taveou-nightlife {
     width: 100%;
-    height: 200px;
-    background-color: peachpuff;
+    background-color: var(--ivory-bg);
 }
 #why-taveou {
     width: 100%;
-    height: 200px;
+    height: 200vh;
     background-color: violet;
 }
 
 #hero {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 200px;
-    background-color: gray;
+    background-color: var(--black);
+}
+#hero:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-size: cover;
+    background: resolve("taveou_colorful-mexican-feast.jpg") no-repeat center center fixed;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale');
 }
 .search-form {
     width: 60%;

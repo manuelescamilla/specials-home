@@ -1,4 +1,19 @@
 @lost flexbox flex;
+section {
+  height: 100vh;
+}
+section:nth-child(2) {
+  background: lightgreen;
+}
+section:nth-child(3) {
+  background: #FF796D;
+}
+section:nth-child(4) {
+  background: red;
+}
+section:nth-child(5) {
+  background: yellow;
+}
 main.home-page {
     display: flex;
     flex-direction: column;
