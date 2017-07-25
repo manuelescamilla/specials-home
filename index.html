@@ -8,6 +8,31 @@
     <title>Taveou</title>
 </head>
 <body>
+    <nav></nav>
+    <main class="home-page">
+        <section id="hero">
+            <div class="hero-content">
+                <div class="top-link"></div>
+                <form action="/search" class="search-form">
+                        <label for="search">Search</label>
+                        <input name="search" id="search" type="text" placeholder="Type here">
+                        <label for="city_selector">City</label>
+                        <select name="city-selector" id="city-selector">
+                            <option value="baltimore">Baltimore</option>
+                            <option value="washington-dc">Washington DC</option>
+                            <option value="not-listed">Not listed?</option>
+                        </select>
+                        <input id="submit" type="submit" value="Search">
+                </form>
+                <div class="more-link">
+                    <a href="#why-taveou" class="why-taveou">Why Taveou?</a>
+                </div>
+            </div>
+        </section>
+        <section id="why-taveou"></section>
+        <section id="taveou-nightlife"></section>
+    </main>
+    <footer></footer>
 <script src="build/bundle.js"></script>
 </body>
 </html>

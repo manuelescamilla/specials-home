@@ -1,1 +1,1 @@
-import '../styles/flex.css';
+import '../styles/global.css';

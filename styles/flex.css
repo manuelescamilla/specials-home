@@ -1,3 +1,31 @@
-.section {
+@lost flexbox flex;
+main.home-page {
     display: flex;
+    flex-direction: column;
+}
+.hero-content {
+    lost-center: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    & .top-link {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: center;  
+    }
+    & .search-form {
+        order: 1;
+        flex: 0 1 center;
+        align-self: center;
+    }
+    & .more-link {
+        order: 2;
+        flex: 0 1 auto;
+        align-self: center;        
+    }
 }
