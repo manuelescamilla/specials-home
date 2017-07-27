@@ -1,96 +1,105 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
+/*------------------------------------*\
+  #HERO
+\*------------------------------------*/
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--black);
+}
+.hero:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background: resolve("taveou_colorful-mexican-feast.jpg") no-repeat center center fixed;
+}
+.hero:before {
+  background-size: cover;
 }
 
-#taveou-nightlife {
-    width: 100%;
-    background-color: var(--ivory-bg);
+
+
+
+
+/*------------------------------------*\
+  #SEARCH-FORM
+\*------------------------------------*/
+
+.search-form {
+  width: 90%;
+  background: var(--bg-white);
+  border-radius: .5vh;
+  height: 70px;
+  @media (max-width: 767px) {
+    height: 50px;
+  }
 }
+.search-form__group {
+  padding: 1vh;
+  height: 100%;
+}
+.form-control__input {
+  position: relative;
+  top: 0.2em;
+  font-size: 1.2em;
+  font-family: Lato, Helvetica, Sans Serif;
+  width: 100%;
+  border: none;
+  &:focus {
+    outline: 0;
+  }
+}
+.form-control__select {
+  position: relative;
+  top: 0.25em;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  font-size: 1.2em;
+  color: var(--link-salmon);
+  &:focus {
+    outline: 0;
+  }
+}
+.form-control__submit {
+  position: relative;
+  top: .5em;
+  left: .5em;
+  color: var(--gray-dark);
+  fill: currentColor;
+  width: 32px;
+  cursor: pointer;
+  &:hover {
+    color: var(--link-salmon);
+  }
+}
+.form-control__submit-button {
+  display:none;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #WHY-TAVEOU
+\*------------------------------------*/
+
 #why-taveou {
     width: 100%;
     height: 200vh;
     background-color: violet;
 }
-
-#hero {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-color: var(--black);
-}
-#hero:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background: resolve("taveou_colorful-mexican-feast.jpg") no-repeat center center fixed;
-}
-#hero:before {
-    background-size: cover;
-}
-.search-form {
-    width: 90%;
-    background: var(--bg-white);
-    border-radius: .5vh;
-    height: 70px;
-    & .search-form__group {
-        padding: 1vh;
-        height: 100%;
-    }
-    @media (max-width: 767px) {
-        height: 50px;
-    }
-}
 .more-link {
     width: 50%;
     background: #fff;
-}
-::placeholder {
-    color: var(--gray-medium);
-}
-.search-form__query {
-    position: relative;
-    top: 0.2em;
-    font-size: 1.2em;
-    font-family: Lato, Helvetica, Sans Serif;
-    width: 100%;
-    border: none;
-    &:focus {
-        outline: 0;
-    }
-}
-.search-form__select {
-    position: relative;
-    top: 0.25em;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: none;
-    font-size: 1.2em;
-    color: var(--link-salmon);
-    &:focus {
-        outline: 0;
-    }
-}
-.search-form__submit {
-    position: relative;
-    top: .5em;
-    left: .5em;
-    color: var(--gray-dark);
-    fill: currentColor;
-    width: 32px;
-    cursor: pointer;
-    &:hover {
-        color: var(--link-salmon);
-    }
-}
-.search-form__submit-button {
-    display:none;
 }
