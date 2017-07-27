@@ -1,6 +1,9 @@
 @lost flexbox flex;
-section {
+.hero {
   height: 100vh;
+  @media (max-width: 767px) {
+      height: 70vh;
+  }
 }
 section:nth-child(2) {
   background: lightgreen;
