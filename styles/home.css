@@ -85,7 +85,7 @@
   }
   @media (max-width: 767px) {
     font-size: 0.8em;
-    top: 0.15;
+    top: 0.15em;
     height: 100%;
   }
 }
@@ -117,12 +117,12 @@
   #WHY-TAVEOU
 \*------------------------------------*/
 
-#intro {
+.intro {
     width: 100%;
     height: 200vh;
-    background-color: #fff;
+    background-color: var(--bg-white);
 }
 .hero-item__next {
     width: 50%;
-    background: #fff;
+    background: var(--bg-white);
 }
