@@ -29,16 +29,68 @@
     height: 100%;
     z-index: 1;
     opacity: 0.6;
-    background-size: cover;
     background: resolve("taveou_colorful-mexican-feast.jpg") no-repeat center center fixed;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale');
+}
+#hero:before {
+    background-size: cover;
 }
 .search-form {
-    width: 60%;
-    background: peachpuff;
+    width: 90%;
+    background: var(--bg-white);
+    border-radius: .5vh;
+    height: 70px;
+    & .search-form__group {
+        padding: 1vh;
+        height: 100%;
+    }
+    @media (max-width: 767px) {
+        height: 50px;
+    }
 }
-
 .more-link {
     width: 50%;
     background: #fff;
+}
+::placeholder {
+    color: var(--gray-medium);
+}
+.search-form__query {
+    position: relative;
+    top: 0.2em;
+    font-size: 1.2em;
+    font-family: Lato, Helvetica, Sans Serif;
+    width: 100%;
+    border: none;
+    &:focus {
+        outline: 0;
+    }
+}
+.search-form__select {
+    position: relative;
+    top: 0.25em;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    font-size: 1.2em;
+    color: var(--link-salmon);
+    &:focus {
+        outline: 0;
+    }
+}
+.search-form__submit {
+    position: relative;
+    top: .5em;
+    left: .5em;
+    color: var(--gray-dark);
+    fill: currentColor;
+    width: 32px;
+    cursor: pointer;
+    &:hover {
+        color: var(--link-salmon);
+    }
+}
+.search-form__submit-button {
+    display:none;
 }

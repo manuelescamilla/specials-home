@@ -8,5 +8,15 @@ module.exports = {
     'postcss-assets': {
       loadPaths: ['assets/'],
     },
+    'postcss-font-magician': {
+      variants: {
+              'Lato': {
+                  '300': [],
+                  '400': [],
+                  '700': []
+              }
+          },
+          foundries: ['google']
+    }
   },
 };

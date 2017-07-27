@@ -19,6 +19,8 @@ main.home-page {
     flex-direction: column;
 }
 .hero-content {
+    position: relative;
+    z-index: 2;
     lost-center: 900px;
     height: 100%;
     display: flex;
@@ -42,5 +44,32 @@ main.home-page {
         order: 2;
         flex: 0 1 auto;
         align-self: center;        
+    }
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    & .search-form__group {
+            align-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+    }
+    & .search-form__group:nth-child(1) {
+        order: 0;
+        flex: 10 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    & .search-form__group:nth-child(2) {
+        order: 1;
+        flex: 1 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    & .search-form__group:nth-child(3) {
+        order: 2;
+        flex: 1 0 auto;
     }
 }
