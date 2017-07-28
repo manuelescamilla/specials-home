@@ -35,6 +35,8 @@
     "postcss-font-magician": "^2.0.0",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.6",
+    "postcss-mixins": "^6.0.1",
+    "postcss-responsive-type": "^1.0.0",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^2.2.0-rc.0"

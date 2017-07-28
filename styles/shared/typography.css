@@ -6,3 +6,13 @@
 body {
    font-family: "Lato";
 }
+h2 {
+  font-weight: 300;
+  font-size: font-responsive  32px 48px;
+  color: var(--dark-green);
+}
+h3 {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: var(--dark-green);
+}

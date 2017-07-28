@@ -27,6 +27,32 @@
 .hero:before {
   background-size: cover;
 }
+.hero-item__next {
+  position: relative;
+  background: var(--ivory-bg);
+  width: 265px;
+  height: 45px;
+  @media (max-width: 767px) {
+    top: 45px;
+  }
+}
+.page-control__next {
+  width: 265px;
+  height: 45px;
+  display: block;
+  stroke: var(--taveou-pink-summer);
+  text-align: center;
+  border-top: solid 1px var(--ivory-border);
+  &:hover {
+    stroke: var(--link-salmon);
+  }
+}
+.next-items__svg {
+  width: 30px;
+  height: 30px;
+  top: .5em;
+  position: relative;
+}
 
 
 
@@ -114,15 +140,85 @@
 
 
 /*------------------------------------*\
-  #WHY-TAVEOU
+  #BRAND-INTRO
 \*------------------------------------*/
 
-.intro {
-    width: 100%;
-    height: 200vh;
-    background-color: var(--bg-white);
+.brand {
+  position: relative;
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
-.hero-item__next {
-    width: 50%;
-    background: var(--bg-white);
+.brand:before {
+    @add-mixin heading-gradient #fffdf6, #ffffff;  
+}
+.brand__tagline {
+  position: relative;
+  padding-top: 5vh;
+  text-align: center;
+}
+.tagline__keyword {
+    font-weight: 500;
+    color: var(--taveou-green);
+}
+.brand__logo {
+  position: relative;
+  width: 15vh;
+  margin-top: 5vh;
+  align-self: center;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #OFFER
+\*------------------------------------*/
+
+.offer {
+  position: relative;
+}
+.offer:before {
+ @media (min-width: 768px) {
+    @add-mixin heading-gradient #fffdf6, #ffffff;
+  }
+}
+.offer-item__title {
+  position: relative;
+  width:100%;
+  text-align: center;
+  padding: 1.5em 0;
+}
+.offer-item__tout {
+  position: relative;
+  width: 50%;
+  padding:  0 1.5em 1.5em;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+.offer-item__tout:nth-child(3) {
+    @media (max-width: 767px) {
+        padding-top: 1em;
+    }
+}
+.tout__assets {
+  text-align: center;
+}
+.tout-asset_img {
+  padding: 5px;
+  border: solid 1px var(--ivory-border);
+  width: 100%
+}
+.tout__title {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1.5em 0;
+}
+.tout__description {
+  font-size: 1.25em;
+  line-height: 1.75em;
+  text-align: center;
+  color: var(--dark-green);
 }

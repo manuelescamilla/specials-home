@@ -1,5 +1,6 @@
 @import "flex.css";
 @import "./shared/colors.css";
+@import "./shared/mixins.css";
 @import "./shared/typography.css";
 @import "home.css";
 

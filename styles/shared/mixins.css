@@ -1,0 +1,23 @@
+/* https://www.npmjs.com/package/postcss-mixins */
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+        @mixin-content;
+    }
+    .icon.is-$(network):hover {
+        color: white;
+        background: $color;
+    }
+}
+@define-mixin heading-gradient $top-color, $bottom-color {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 170px;
+    background: -moz-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+    background: -webkit-linear-gradient(top, $top-color 0%, $bottom-color 100%);
+    background: linear-gradient(to bottom, $top-color 0%, $bottom-color 100%);
+}
