@@ -1,5 +1,5 @@
 :root {
-    --taveou-green: #4B9F38;
+    --taveou-green: #4B9F38;75 159 56 100
     --taveou-pink-summer: #FF796D; 
     --link-salmon: #F55547;
     --ivory-bg: #FFFDF6;
@@ -10,5 +10,12 @@
     --gray-medium: #9B9B9B;
     --gray-dark: #909090;
     --black: #000;
+    --black-variant: #4A4A4A;
     --white: #fff;
+}
+.taveou-lime {
+  fill: var(--taveou-green);
+}
+.taveou-name {
+  fill: var(--taveou-pink-summer);  
 }
