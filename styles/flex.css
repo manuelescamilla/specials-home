@@ -114,3 +114,43 @@ main.home-page {
 .offer__content {
   lost-center: var(--desktop-width);
 }
+
+
+
+
+
+/*------------------------------------*\
+  #FLEX-HIGHLIGHTS
+\*------------------------------------*/
+
+.highlights {
+  display: flex;
+  flex-flow: row wrap;
+}
+.highlights__content {
+  lost-center: var(--desktop-width);
+}
+.highlights__feature {
+  display: flex;
+  flex-flow: column wrap;
+}
+.feature__icon {
+    align-self: center;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #FULL-WIDTH
+\*------------------------------------*/
+
+.full-width__content {
+  height: 100%;
+  display: flex;
+}
+.full-width__content--column-space-between {
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
