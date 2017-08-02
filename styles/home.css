@@ -1,4 +1,123 @@
 /*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header__logo {
+  padding-left: .5em;
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-left: 0.5em 0 0 0;
+    text-align: center;
+  }
+}
+.taveou-brand__svg {
+  width: 15em;
+  @media (max-width: 767px) {
+    width: 12em;
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+  height: 80px;
+  @media (max-width: 767px) {
+    height: 10em;
+  }
+}
+.header__nav {
+  padding-right: 1em;
+  @media (max-width: 767px) {
+    padding-right: 0;
+  } 
+}
+.nav-item__link {
+  color: var(--black-variant);
+  margin-left: 2em;
+  text-decoration: none;
+  &:hover {
+    color: var(--link-salmon);
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  @media (max-width: 767px) {
+    margin-left: 0;
+    margin-right: 0.4em;
+    width: 20vw;
+    &:nth-child(2) {
+    margin-left: 0.5em;
+    }
+  }
+}
+.nav-item__link--button {
+  color: var(--taveou-pink-summer);
+  @media (min-width: 768px) {
+    padding: .5em 2.5em;
+    background: var(--taveou-pink-summer);
+    color: var(--white);
+    border-radius: 0.3em;
+    margin: 0 2em;
+    &:hover {
+      color: var(--white);
+      background: var(--link-salmon);
+    }
+  }
+}
+.nav-item__icon {
+  display: none;
+  @media (max-width: 767px) {
+    display: inline-flex;
+    font-size: 1.875em;
+    color: var(--gray-medium);
+    padding-bottom: 0.2em;
+  }
+}
+.nav-item__icon--cta {
+  @media (max-width: 767px) {
+    color: var(--taveou-pink-summer);
+    &:hover{
+      color: var(--link-salmon);
+    }
+  }
+}
+.nav-item__caption {
+  letter-spacing: 0.1em;
+  @media (max-width: 767px) {
+    letter-spacing: 0;
+    font-size: 0.875em;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .nav-item__caption {
+    letter-spacing: 0;
+  }
+  .header__nav {
+    padding-right: 0;
+ }
+}
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+.home-page {
+  position: relative;
+  z-index: 1;
+  @media (max-width: 767px) {
+    padding-top: 10em;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
   #HERO
 \*------------------------------------*/
 
@@ -146,16 +265,14 @@
 
 .brand {
   position: relative;
-  @media (min-width: 768px) {
-    display: none;
-  }
+  background: var(--white);
 }
 .brand:before {
     @add-mixin heading-gradient #fffdf6, #ffffff;  
 }
 .brand__tagline {
   position: relative;
-  padding-top: 5vh;
+  padding-top: 2em;
   text-align: center;
 }
 .tagline__keyword {
@@ -164,8 +281,8 @@
 }
 .brand__logo {
   position: relative;
-  width: 15vh;
-  margin-top: 5vh;
+  width: 6em;
+  margin-top: 2em;
   align-self: center;
 }
 
@@ -180,17 +297,14 @@
 .offer {
   position: relative;
   padding-bottom: 3em;
+  background: var(--white);
 }
-.offer:before {
- @media (min-width: 768px) {
-    @add-mixin heading-gradient #fffdf6, #ffffff;
-  }
-}
+
 .offer-item__title {
   position: relative;
   width:100%;
   text-align: center;
-  padding: 1.5em 0;
+  padding: .5em 0 1.5em;
 }
 .offer-item__tout {
   position: relative;
@@ -234,7 +348,7 @@
 \*------------------------------------*/
 
 .highlights {
-  margin-bottom: 1.5em;
+  background: var(--white);
 }
 .highlights__feature {
   width: 50%;

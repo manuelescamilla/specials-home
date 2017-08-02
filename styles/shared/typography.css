@@ -8,7 +8,7 @@ body {
 }
 h2 {
   font-weight: 300;
-  font-size: font-responsive  32px 48px;
+  font-size: 3em;
   color: var(--dark-green);
 }
 h3 {
@@ -16,4 +16,7 @@ h3 {
   font-weight: 300;
   font-size: 1.5em;
   color: var(--dark-green);
+  @media (min-width: 768px) {
+    font-size: 2em;
+  }
 }

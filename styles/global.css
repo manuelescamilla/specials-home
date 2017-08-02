@@ -2,6 +2,7 @@
 @import "./shared/colors.css";
 @import "./shared/mixins.css";
 @import "./shared/typography.css";
+@import "./shared/slide-animation.css";
 @import "home.css";
 
 * {
@@ -12,7 +13,11 @@
     -ms-transition:     all 0.2s ease;
     -o-transition:      all 0.2s ease;
 }
-
+html {
+ @media (max-width: 767px) {
+    background: resolve("heineken_beer_ad.jpg") no-repeat center top;
+  }
+}
 ::placeholder {
     color: var(--gray-medium);
 }
