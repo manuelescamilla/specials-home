@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  #FLEX-HEADER
+\*------------------------------------*/
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 767px) {
+    align-items: flex-start;
+  }
+}
+.nav-item__link {
+  flex: 0 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 767px) {
+
+  }  
+}
+@media (max-width: 767px) {
+  .nav-item__link:nth-child(1) {
+      order: 5;
+  }
+}
+.scroll-utility {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  align-items: center;
+}

@@ -1,0 +1,33 @@
+/*------------------------------------*\
+  #FLEX-MAILCHIMP
+\*------------------------------------*/
+
+.mailchimp-form {
+  display: flex;
+}
+.mailchimp-form__group {
+  &:nth-child(1){
+    flex: 1 0 auto;
+    display: flex;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+  #MAILCHIMP
+\*------------------------------------*/
+
+.mailchimp {
+  position: relative;
+  width: 100%;
+}
+.mailchimp-form {
+  width: 100%;
+  background: var(--white);
+  border-radius: .5vh;
+}
+.mailchimp-form__group {
+  width: 100%;
+}

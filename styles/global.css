@@ -1,27 +1,19 @@
-@import "flex.css";
+@import "./shared/reset.css";
 @import "./shared/colors.css";
 @import "./shared/mixins.css";
 @import "./shared/typography.css";
 @import "./shared/slide-animation.css";
+@import "./shared/flex-config.css";
+@import "./shared/elements.css";
+@import "./sections/header/header.css";
+@import "./sections/footer/footer.css";
+@import "./sections/touts/branding.css";
 @import "home.css";
+@import "./sections/touts/mailchimp.css";
+@import "welcome.css";
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition:    all 0.2s ease;
-    -ms-transition:     all 0.2s ease;
-    -o-transition:      all 0.2s ease;
-}
-html {
+.html-home {
  @media (max-width: 767px) {
     background: resolve("heineken_beer_ad.jpg") no-repeat center top;
   }
-}
-::placeholder {
-    color: var(--gray-medium);
-}
-#taveou-nightlife {
-    width: 100%;
-    background-color: var(--ivory-bg);
 }

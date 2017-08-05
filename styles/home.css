@@ -1,102 +1,5 @@
-/*------------------------------------*\
-  #HEADER
-\*------------------------------------*/
+@import "./flex/flex-home.css";
 
-.header__logo {
-  padding-left: .5em;
-  @media (max-width: 767px) {
-    width: 100%;
-    padding-left: 0.5em 0 0 0;
-    text-align: center;
-  }
-}
-.taveou-brand__svg {
-  width: 15em;
-  @media (max-width: 767px) {
-    width: 12em;
-  }
-}
-.header {
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  background: #fff;
-  height: 80px;
-  @media (max-width: 767px) {
-    height: 10em;
-  }
-}
-.header__nav {
-  padding-right: 1em;
-  @media (max-width: 767px) {
-    padding-right: 0;
-  } 
-}
-.nav-item__link {
-  color: var(--black-variant);
-  margin-left: 2em;
-  text-decoration: none;
-  &:hover {
-    color: var(--link-salmon);
-  }
-  &:first-child {
-    margin-left: 0;
-  }
-  @media (max-width: 767px) {
-    margin-left: 0;
-    margin-right: 0.4em;
-    width: 20vw;
-    &:nth-child(2) {
-    margin-left: 0.5em;
-    }
-  }
-}
-.nav-item__link--button {
-  color: var(--taveou-pink-summer);
-  @media (min-width: 768px) {
-    padding: .5em 2.5em;
-    background: var(--taveou-pink-summer);
-    color: var(--white);
-    border-radius: 0.3em;
-    margin: 0 2em;
-    &:hover {
-      color: var(--white);
-      background: var(--link-salmon);
-    }
-  }
-}
-.nav-item__icon {
-  display: none;
-  @media (max-width: 767px) {
-    display: inline-flex;
-    font-size: 1.875em;
-    color: var(--gray-medium);
-    padding-bottom: 0.2em;
-  }
-}
-.nav-item__icon--cta {
-  @media (max-width: 767px) {
-    color: var(--taveou-pink-summer);
-    &:hover{
-      color: var(--link-salmon);
-    }
-  }
-}
-.nav-item__caption {
-  letter-spacing: 0.1em;
-  @media (max-width: 767px) {
-    letter-spacing: 0;
-    font-size: 0.875em;
-  }
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .nav-item__caption {
-    letter-spacing: 0;
-  }
-  .header__nav {
-    padding-right: 0;
- }
-}
 
 
 
@@ -109,7 +12,7 @@
   position: relative;
   z-index: 1;
   @media (max-width: 767px) {
-    padding-top: 10em;
+    padding-top: 9em;
   }
 }
 
@@ -137,7 +40,7 @@
   height: 100%;
   z-index: 1;
   opacity: 0.6;
-  background: resolve("taveou_colorful-mexican-feast.jpg") no-repeat center center fixed;
+  background: resolve("taveou_colorful-mexican-feast.jpg") no-repeat center center;
   @media (max-width: 767px) {
     opacity: 0.7;
     background: resolve("taveou-lemon-margarita.jpg") no-repeat center center;
@@ -247,44 +150,14 @@
     color: var(--link-salmon);
   }
   @media (max-width: 767px) {
-    top: 0;
-    left: 0;
+    top: 0.2em;
+    left: 0.2em;
   }
 }
 .form-control__submit-button {
   display:none;
 }
 
-
-
-
-
-/*------------------------------------*\
-  #BRAND-INTRO
-\*------------------------------------*/
-
-.brand {
-  position: relative;
-  background: var(--white);
-}
-.brand:before {
-    @add-mixin heading-gradient #fffdf6, #ffffff;  
-}
-.brand__tagline {
-  position: relative;
-  padding-top: 2em;
-  text-align: center;
-}
-.tagline__keyword {
-    font-weight: 500;
-    color: var(--taveou-green);
-}
-.brand__logo {
-  position: relative;
-  width: 6em;
-  margin-top: 2em;
-  align-self: center;
-}
 
 
 
@@ -305,6 +178,9 @@
   width:100%;
   text-align: center;
   padding: .5em 0 1.5em;
+  @media (max-width: 767px) {
+    padding-bottom: 1em;
+  }
 }
 .offer-item__tout {
   position: relative;
@@ -406,61 +282,5 @@
   @media (max-width: 767px) {
     font-size: 2em;
       padding: 1em 0 0 1em;
-  }
-}
-
-
-
-
-
-/*------------------------------------*\
-  #FOOTER
-\*------------------------------------*/
-
-footer {
-  height: 22em;
-  background: var(--ivory-bg);
-  @media (max-width: 767px) {
-    height: 19em;
-  }
-}
-.footer__social {
-  width: 20em;
-  padding: 2.5em 0 1.5em;
-  @media (max-width: 767px) {
-  width: 17em;
-  }
-}
-.footer__logo {
-  width: 25em;
-  padding: 3em 0 1em;
-  @media (max-width: 767px) {
-    width: 20em;
-    padding: 2.5em 0 .5em;
-  }
-}
-.social__caption {
-  font-size: 1.5em;
-  color: var(--black-variant);
-  @media (max-width: 767px) {
-    font-size: 1.25em;   
-  }
-}
-.social__link {
-  color: var(--gray-dark);
-  text-decoration: none;
-  text-align: center;
-  &:hover {
-    color: var(--link-salmon);
-  }
-}
-.link__icon {
-  font-size: 2em;
-}
-.footer__copyright {
-  color: var(--dark-green);
-  font-size: 1.75em;
-  @media (max-width: 767px) {
-  font-size: 1.25em;   
   }
 }

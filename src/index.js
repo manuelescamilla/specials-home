@@ -3,14 +3,11 @@ import '../styles/global.css';
 import './hero.js';
 
 
-const myElement = document.querySelector(".header");
+const header = document.querySelector(".header");
 // construct an instance of Headroom, passing the element
-// const headroom  = new Headroom(myElement);
-// // initialise
-// headroom.init();
 
-
-const headroom = new Headroom(document.querySelector(".header"), {
+if(header){
+const headroom = new Headroom(header, {
         tolerance: 5,
         offset : 205,
         classes: {
@@ -19,4 +16,6 @@ const headroom = new Headroom(document.querySelector(".header"), {
           unpinned: "slideUp"
         }
     });
-    headroom.init();
+
+headroom.init();
+}

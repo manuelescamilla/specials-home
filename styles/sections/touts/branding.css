@@ -1,0 +1,62 @@
+/*------------------------------------*\
+  #FLEX-BRAND-INTRO
+\*------------------------------------*/
+
+.brand {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BRAND-INTRO
+\*------------------------------------*/
+
+.brand {
+  position: relative;
+}
+.brand--white-bg {
+  background: var(--white);
+}
+.brand__tagline {
+  position: relative;
+  padding-top: 2em;
+  text-align: center;
+}
+.tagline__keyword {
+    font-weight: 500;
+    color: var(--taveou-green);
+}
+/* Coming soon page only */
+.tagline_coming-soon {
+  font-size: 3em;
+  font-weight: 300;
+  @media (max-width: 768px) {
+    font-size: 1.75em;
+  }
+}
+.brand__logo {
+  position: relative;
+  width: 6em;
+  margin-top: 2em;
+  align-self: center;
+}
+.brand__welcome {
+  position: relative;
+  padding: 1em 0 2em;
+  align-self: center;
+  color: var(--black-variant);
+  font-size: 1.25em;
+}
+
+
+
+
+
+
+
+
+

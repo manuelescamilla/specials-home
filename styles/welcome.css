@@ -1,0 +1,110 @@
+@import "./flex/flex-welcome.css";
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+.welcome-page {
+  position: relative;
+  z-index: 1;
+  &:before {
+    @add-mixin heading-gradient var(--ivory-bg), var(--white), 370px;
+  }
+}
+
+
+
+/*------------------------------------*\
+  #WELCOME-CONTENT
+\*------------------------------------*/
+.welcome__content {
+  padding-top: 1em;
+  @media (min-width: 990px) {
+    padding-top:10em;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+  #MOCK
+\*------------------------------------*/
+
+.welcome-section__mock {
+  position: relative;
+  text-align: center;
+  @media (min-width: 990px) {
+    width: 30%;
+    background: resolve('phone-mock.png') no-repeat center center;
+    min-height: 564px;
+  }
+  @media (max-width: 989px) {
+    display: flex;
+    padding-top: 2em;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    flex-flow: row wrap;
+  }  
+}
+.mock__device{
+  width: 90%;
+  position: absolute;
+}
+.mock__svg {
+    width:10em;
+  @media (min-width: 989px) {
+    display: none;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #TOUTS
+\*------------------------------------*/
+
+.welcome-section__touts {
+  position: relative;
+  @media (min-width: 990px) {
+    width: 70%;
+    padding: 0 3em;
+  }
+  @media (max-width: 989px) {
+    width: 100%;
+    padding: 0 2em;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #LIST
+\*------------------------------------*/
+
+.bullet-list {
+  position: relative;
+  padding: 2.5em 0 0 1.5em;
+  font-size: 1em;
+}
+
+.bullet__item {
+  list-style: none;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  &:before {
+  content: '\E00d';
+  position: relative;
+  left: -0.5em;
+  color: var(--taveou-green);
+  font-family: taveou-ii;
+  }
+}

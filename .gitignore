@@ -2,3 +2,7 @@
 .DS_Store
 /node_modules
 /build
+/semantic/build/components
+/semantic/build/themes
+/semantic/src
+/semantic/tasks

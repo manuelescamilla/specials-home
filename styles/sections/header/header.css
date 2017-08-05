@@ -1,0 +1,105 @@
+@import "./flex-header.css";
+
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header__logo {
+  padding-left: .5em;
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+  }
+}
+.taveou-brand__svg {
+  width: 15em;
+  @media (max-width: 767px) {
+    width: 12em;
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+  height: 80px;
+  @media (max-width: 767px) {
+    height: 9em;
+  }
+}
+.header__nav {
+  padding-right: 1em;
+  @media (max-width: 767px) {
+    padding-right: 0;
+  } 
+}
+.nav-item__link {
+  color: var(--black-variant);
+  margin-left: 2em;
+  text-decoration: none;
+  &:hover {
+    color: var(--link-salmon);
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  @media (max-width: 767px) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 25vw;
+    &:nth-child(2) {
+    margin-left: 0;
+    }
+  }
+}
+.nav-item__link--button {
+  color: var(--taveou-pink-summer);
+  @media (min-width: 768px) {
+    padding: .5em 2.5em;
+    background: var(--taveou-pink-summer);
+    color: var(--white);
+    border-radius: 0.3em;
+    margin: 0 2em;
+    &:hover {
+      color: var(--white);
+      background: var(--link-salmon);
+    }
+  }
+}
+.nav-item__icon {
+  display: none;
+  @media (max-width: 767px) {
+    display: inline-flex;
+    font-size: 1.875em;
+    color: var(--gray-medium);
+    padding-bottom: 0.2em;
+  }
+}
+.nav-item__icon--cta {
+  @media (max-width: 767px) {
+    color: var(--taveou-pink-summer);
+    &:hover{
+      color: var(--link-salmon);
+    }
+  }
+}
+.nav-item__caption {
+  letter-spacing: 0.1em;
+  @media (max-width: 767px) {
+    letter-spacing: 0;
+    font-size: 0.875em;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .nav-item__caption {
+    letter-spacing: 0;
+  }
+  .header__nav {
+    padding-right: 0;
+ }
+}

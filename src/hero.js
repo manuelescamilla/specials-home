@@ -1,7 +1,7 @@
 const searchForm = document.querySelector('.js-search-form');
 const submitButtonGroup = document.querySelector('.js-search-submit-button-group');
 
-if (searchForm.addEventListener) {
+if (searchForm && searchForm.addEventListener) {
     searchForm.addEventListener("submit", function(evt) {
         evt.preventDefault();
         

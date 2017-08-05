@@ -1,0 +1,7 @@
+/*------------------------------------*\
+  #FLEX-WELCOME
+\*------------------------------------*/
+
+.welcome__content {
+  lost-center: var(--desktop-width);
+}

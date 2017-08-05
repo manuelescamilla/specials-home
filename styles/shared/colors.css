@@ -19,16 +19,6 @@
 .taveou-name {
   fill: var(--taveou-pink-summer);  
 }
-.divider {
-  @media (max-width: 767px) {
-  position: relative;
-  top: -0.4em;
-  height: 2px;
-  width: 100%;
-  margin: 0 1em;
-  background: #fffdf6; /* Old browsers */
-  background: -moz-linear-gradient(left, #fffdf6 0%, #e8e4d1 50%, #fffdf6 100%);
-  background: -webkit-linear-gradient(left, #fffdf6 0%,#e8e4d1 50%,#fffdf6 100%);
-  background: linear-gradient(to right, #fffdf6 0%,#e8e4d1 50%,#fffdf6 100%);
-  }
+::placeholder {
+    color: var(--gray-medium);
 }
