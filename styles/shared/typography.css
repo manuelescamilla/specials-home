@@ -11,6 +11,7 @@ font-size: 3em;
   color: var(--dark-green);
   @media (max-width: 767px) {
     font-size: 2.5em;
+    font-weight: 300;
   }
 }
 h3 {

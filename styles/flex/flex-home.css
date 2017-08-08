@@ -81,7 +81,11 @@ main.home-page {
   order: 2;
   flex: 1 0 auto;
 }
-
+.search-form__group--justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
